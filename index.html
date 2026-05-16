@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malledi Bruhanth — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       To edit: Change the nav links below
+  =============================================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">MB.</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle">☀️ Light</button>
+    <button class="nav-hamburger" id="hamburger">☰</button>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+       To edit: Change your name, title, and subtitle below
+  =============================================================== -->
+  <section class="hero" id="home">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">👋 Open to Internships & Opportunities</div>
+      <!-- EDIT: Your name -->
+      <h1 class="hero-name">Malledi Bruhanth</h1>
+      <!-- EDIT: Typing animation titles (also edit in script.js) -->
+      <p class="hero-title">I am an <span id="typed-text" class="typed"></span><span class="cursor">|</span></p>
+      <!-- EDIT: Your tagline -->
+      <p class="hero-sub">B.Tech CSE — AI & ML &nbsp;·&nbsp; 3rd Year &nbsp;·&nbsp; MREC, Hyderabad</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <!-- EDIT: Replace # with your actual resume link -->
+        <a href="#" class="btn-outline" download>⬇ Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+       To edit: Change the paragraph text to describe yourself
+  =============================================================== -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="section-label">Who I am</p>
+      <h2 class="section-title">About Me</h2>
+      <!-- EDIT: Your bio -->
+      <p class="about-text">
+        I'm <strong>Malledi Bruhanth</strong>, a passionate B.Tech student specializing in 
+        Artificial Intelligence & Machine Learning at Malla Reddy Engineering College, Hyderabad. 
+        I enjoy building intelligent systems, exploring deep learning models, and solving 
+        real-world problems through data-driven approaches. Currently seeking internship 
+        opportunities to apply my skills and grow professionally.
+      </p>
+      <div class="about-stats">
+        <div class="stat-card"><span class="stat-num">3rd</span><span class="stat-label">Year</span></div>
+        <div class="stat-card"><span class="stat-num">3+</span><span class="stat-label">Projects</span></div>
+        <div class="stat-card"><span class="stat-num">3+</span><span class="stat-label">Certifications</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS SECTION
+       To edit: Add/remove skill cards below
+       Format: <div class="skill-card"><div class="skill-icon">ICON</div><p class="skill-name">NAME</p></div>
+  =============================================================== -->
+  <section class="section alt-bg" id="skills">
+    <div class="section-inner">
+      <p class="section-label">What I know</p>
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="skills-grid">
+
+        <!-- EDIT: Add or remove skill cards here -->
+        <div class="skill-card">
+          <div class="skill-icon">🐍</div>
+          <p class="skill-name">Python</p>
+          <!-- EDIT: Change the width % to reflect your skill level -->
+          <div class="skill-bar"><div class="skill-fill" style="width: 82%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <p class="skill-name">HTML / CSS</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🗄️</div>
+          <p class="skill-name">SQL</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 65%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🤖</div>
+          <p class="skill-name">TensorFlow</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 55%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🔥</div>
+          <p class="skill-name">PyTorch</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 50%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">📊</div>
+          <p class="skill-name">Scikit-learn</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 60%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">👁️</div>
+          <p class="skill-name">OpenCV</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 52%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🐼</div>
+          <p class="skill-name">Pandas / NumPy</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 68%"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+       To edit: Change project title, description, tags, and links
+  =============================================================== -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <p class="section-label">What I've built</p>
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <!-- PROJECT CARD — Copy this block to add more projects -->
+        <div class="project-card">
+          <!-- EDIT: Project tag -->
+          <span class="project-tag">AI / ML</span>
+          <!-- EDIT: Project title -->
+          <h3 class="project-title">Image Classifier</h3>
+          <!-- EDIT: Project description -->
+          <p class="project-desc">CNN-based deep learning model to classify images with high accuracy using TensorFlow and Keras.</p>
+          <div class="project-links">
+            <!-- EDIT: Replace # with your GitHub link -->
+            <a href="#" class="project-link" target="_blank">GitHub</a>
+            <!-- EDIT: Replace # with your live demo link -->
+            <a href="#" class="project-link demo" target="_blank">Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <span class="project-tag">Python</span>
+          <h3 class="project-title">Data Analysis Tool</h3>
+          <p class="project-desc">Automated EDA and visualization pipeline using Pandas, NumPy & Matplotlib for fast insights.</p>
+          <div class="project-links">
+            <a href="#" class="project-link" target="_blank">GitHub</a>
+            <a href="#" class="project-link demo" target="_blank">Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <span class="project-tag">Computer Vision</span>
+          <h3 class="project-title">Face Detection App</h3>
+          <p class="project-desc">Real-time face detection system built using OpenCV and pre-trained deep learning models.</p>
+          <div class="project-links">
+            <a href="#" class="project-link" target="_blank">GitHub</a>
+            <a href="#" class="project-link demo" target="_blank">Live Demo</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EDUCATION SECTION
+       To edit: Change college, degree, and year
+  =============================================================== -->
+  <section class="section alt-bg" id="education">
+    <div class="section-inner">
+      <p class="section-label">Where I study</p>
+      <h2 class="section-title">Education</h2>
+      <div class="edu-card">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-info">
+          <!-- EDIT: College name -->
+          <h3 class="edu-title">Malla Reddy Engineering College & Management Science</h3>
+          <!-- EDIT: Degree -->
+          <p class="edu-sub">B.Tech — Computer Science & Engineering (AI & ML)</p>
+          <!-- EDIT: Year -->
+          <p class="edu-year">📅 2022 – 2026 &nbsp;·&nbsp; Currently 3rd Year</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EXPERIENCE SECTION
+       To edit: Replace the placeholder with your real experience
+  =============================================================== -->
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <p class="section-label">Work</p>
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-placeholder">
+        <p class="exp-icon">🚀</p>
+        <p class="exp-text">Experience Coming Soon</p>
+        <p class="exp-sub">Currently building skills & looking for internship opportunities</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CERTIFICATIONS SECTION
+       To edit: Change cert name, issuer, and date
+  =============================================================== -->
+  <section class="section alt-bg" id="certifications">
+    <div class="section-inner">
+      <p class="section-label">Achievements</p>
+      <h2 class="section-title">Certifications</h2>
+      <div class="cert-grid">
+
+        <!-- CERT CARD — Copy this block to add more certifications -->
+        <div class="cert-card">
+          <!-- EDIT: Who gave the certificate -->
+          <p class="cert-issuer">COURSERA</p>
+          <!-- EDIT: Certificate name -->
+          <p class="cert-name">Python for Everybody</p>
+          <!-- EDIT: Year -->
+          <p class="cert-date">2024</p>
+        </div>
+
+        <div class="cert-card">
+          <p class="cert-issuer">GOOGLE</p>
+          <p class="cert-name">ML Crash Course</p>
+          <p class="cert-date">2024</p>
+        </div>
+
+        <div class="cert-card">
+          <p class="cert-issuer">NPTEL</p>
+          <p class="cert-name">Deep Learning Fundamentals</p>
+          <p class="cert-date">2025</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RESUME SECTION
+       To edit: Replace href="#" with your actual resume PDF link
+  =============================================================== -->
+  <section class="resume-section">
+    <p class="resume-label">Want to know more?</p>
+    <h2 class="resume-title">Check Out My Resume</h2>
+    <!-- EDIT: Replace # with your resume PDF link -->
+    <a href="#" class="resume-btn" download>⬇ Download Resume</a>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+       To edit: Change your email and social links
+  =============================================================== -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <p class="section-label">Get in touch</p>
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-grid">
+
+       <form class="contact-form" action="https://web3forms.com" method="POST">
+        <input class="contact-input" type="text" name="name" placeholder="Your Name" required />
+        <input class="contact-input" type="email" name="email" placeholder="Your Email" required />
+        <textarea class="contact-input" name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary" style="text-align:center; width: 100%; border: none; cursor: pointer;">
+           Send Message
+        </button>
+       </form>
+
+        <div class="contact-socials">
+          <!-- EDIT: Replace # with your actual profile links -->
+          <a href="#" class="social-link" target="_blank">
+            <span class="social-icon">💼</span>
+            <span class="social-name">LinkedIn</span>
+            <span class="social-handle">Malledi Bruhanth →</span>
+          </a>
+          <a href="https://github.com/Bruhanth13" class="social-link" target="_blank">
+            <span class="social-icon">🐙</span>
+            <span class="social-name">GitHub</span>
+            <span class="social-handle">@malledibruhanth →</span>
+          </a>
+          <a href="https://www.instagram.com/bruhanth_13/" class="social-link" target="_blank">
+            <span class="social-icon">📸</span>
+            <span class="social-name">Instagram</span>
+            <span class="social-handle">@malledi_b →</span>
+          </a>
+          <!-- EDIT: Replace with your actual email -->
+          <a href="mailto:bruhanthmallidi@gmail.com" class="social-link">
+            <span class="social-icon">📧</span>
+            <span class="social-name">Email</span>
+            <span class="social-handle">bruhanthmallidi@gmail.com →</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       To edit: Change the name and year
+  =============================================================== -->
+  <footer class="footer">
+    <p>Designed & Built by <span class="footer-name">Malledi Bruhanth</span> · 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
