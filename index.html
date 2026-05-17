@@ -282,15 +282,15 @@
       <p class="section-label">Get in touch</p>
       <h2 class="section-title">Contact Me</h2>
       <div class="contact-grid">
-
-       <form class="contact-form" action="https://web3forms.com" method="POST">
-        <input class="contact-input" type="text" name="name" placeholder="Your Name" required />
-        <input class="contact-input" type="email" name="email" placeholder="Your Email" required />
-        <textarea class="contact-input" name="message" rows="4" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn-primary" style="text-align:center; width: 100%; border: none; cursor: pointer;">
-           Send Message
-        </button>
-       </form>
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="c5d04581-fa18-4ac3-836c-379264361cba">
+          <input class="contact-input" type="text" name="name" placeholder="Your Name" required>
+          <input class="contact-input"  type="email" name="email" placeholder="Your Email" required>
+          <textarea class="contact-input" name="message" placeholder="Your Message" required></textarea>
+          <button type="submit"class="btn-primary" style="text-align:center; width: 100%; border: none; cursor: pointer;">
+             Send Message
+          </button>
+        </form>
 
         <div class="contact-socials">
           <!-- EDIT: Replace # with your actual profile links -->
